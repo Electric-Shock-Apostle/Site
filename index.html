@@ -4,12 +4,13 @@
     <title>E.S.A</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="lib/css/bulma.min.css">
+    <link rel="stylesheet" href="lib/css/styles.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
 <body>
     <style>
-        html {
+        .page1 {
             height: 100%;
             margin: 0;
             background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
@@ -75,8 +76,15 @@
         .subtitle {
             color: white;
         }
+
+        .hero-body {
+            z-index: 99999;
+        }
+        #solar{
+            filter: blur(10px);
+        }
     </style>
-    <section class="hero is-fullheight">
+    <section class="hero is-fullheight page1">
         <div class="hero-body">
             <div class="container">
                 <figure class="image is-128x128" style="margin-left: auto; margin-right: auto;">
@@ -89,13 +97,113 @@
         </div>
     </section>
     <section class="hero is-fullheight">
+        <div class="solar">
+            <div class="opening hide-UI view-2D zoom-large data-close controls-close" id="background">
+                <div id="universe" class="scale-stretched">
+                    <div id="galaxy">
+                        <div id="solar-system" class="earth">
+                            <div id="mercury" class="orbit">
+                                <div class="pos">
+                                    <div class="planet">
+                                        <dl class="infos">
+                                            <dt>Mercury</dt>
+                                            <dd><span></span></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="venus" class="orbit">
+                                <div class="pos">
+                                    <div class="planet">
+                                        <dl class="infos">
+                                            <dt>Venus</dt>
+                                            <dd><span></span></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="earth" class="orbit">
+                                <div class="pos">
+                                    <div class="orbit">
+                                        <div class="pos">
+                                            <div class="moon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="planet">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="mars" class="orbit">
+                                <div class="pos">
+                                    <div class="planet">
+                                        <dl class="infos">
+                                            <dt>Mars</dt>
+                                            <dd><span></span></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="jupiter" class="orbit">
+                                <div class="pos">
+                                    <div class="planet">
+                                        <dl class="infos">
+                                            <dt>Jupiter</dt>
+                                            <dd><span></span></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="saturn" class="orbit">
+                                <div class="pos">
+                                    <div class="planet">
+                                        <div class="ring"></div>
+                                        <dl class="infos">
+                                            <dt>Saturn</dt>
+                                            <dd><span></span></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="uranus" class="orbit">
+                                <div class="pos">
+                                    <div class="planet">
+                                        <dl class="infos">
+                                            <dt>Uranus</dt>
+                                            <dd><span></span></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="neptune" class="orbit">
+                                <div class="pos">
+                                    <div class="planet">
+                                        <dl class="infos">
+                                            <dt>Neptune</dt>
+                                            <dd><span></span></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sun">
+                                <dl class="infos">
+                                    <dt>Sun</dt>
+                                    <dd><span></span></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="lib/js/jquery.min.js"></script>
+                <script src="lib/js/prefixfree.min.js"></script>
+                <script src="lib/js/scripts.js"></script>
+            </div>
+        </div>
         <div class="hero-body">
             <div class="container">
-                <h1 class="title">
-                    E.S.A Team
-                </h1>
+                <figure class="image is-128x128" style="margin-left: auto; margin-right: auto;">
+                    <img src="lib/img/logo.png" alt="E.S.A Logo">
+                </figure>
                 <h2 class="subtitle">
-                    Just for fun
                 </h2>
             </div>
         </div>
